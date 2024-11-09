@@ -1,0 +1,189 @@
+/* Footer.css */
+/* Footer.css */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0 0 20px 0; /* padding kamaytirildi */
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+  }
+  
+  .footer-top {
+    padding: 0 30px 20px; /* padding kamaytirildi */
+    border-bottom: 1px solid #333;
+    position: relative;
+  }
+  
+  
+  .catalog-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1000px; /* maksimal kenglik kamaytirildi */
+    margin: 0 auto;
+    position: relative;
+   
+  }
+  .catalog-container::before {
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(
+      to right,
+      #ff4444 0%,
+      #ff4444 16.66%,
+      #33b5e5 16.66%,
+      #33b5e5 33.32%,
+      #00C851 33.32%,
+      #00C851 49.98%,
+      #ffbb33 49.98%,
+      #ffbb33 66.64%,
+      #9933CC 66.64%,
+      #9933CC 83.3%,
+      #00695c 83.3%,
+      #00695c 100%
+    );
+  }
+
+  .catalog {
+    padding-top: 15px; /* chiziqdan kontentgacha masofa */
+  }
+  
+  .catalog::before {
+    display: none;
+  }
+  
+  .catalog h3 {
+    font-size: 16px; /* sarlavha o'lchami kichraytirildi */
+    margin-bottom: 12px;
+    padding-top: 12px;
+  }
+  
+  .catalog ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .catalog li {
+    margin-bottom: 6px; /* margin kamaytirildi */
+    font-size: 12px; /* shrift o'lchami kichraytirildi */
+    color: #999;
+  }
+  
+  /* Second Layer Styles */
+  .footer-middle {
+    padding: 20px 30px; /* padding kamaytirildi */
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px; /* gap kamaytirildi */
+  }
+  
+  .links a {
+    font-size: 12px; /* shrift o'lchami kichraytirildi */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px; /* gap kamaytirildi */
+  }
+  
+  .icon {
+    font-size: 18px; /* ikonlar o'lchami kichraytirildi */
+  }
+  
+  /* Third Layer Styles */
+  .footer-bottom {
+    padding: 20px 30px; /* padding kamaytirildi */
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px; /* shrift o'lchami kichraytirildi */
+    line-height: 1.4;
+  }
+  
+  /* Responsive dizayn uchun breakpointlar */
+  @media (max-width: 1000px) {
+    .catalog-container {
+      grid-template-columns: repeat(3, 1fr);
+      background: linear-gradient(
+      to right,
+      #ff4444 0%,
+      #ff4444 33.33%,
+      #33b5e5 33.33%,
+      #33b5e5 66.66%,
+      #00C851 66.66%,
+      #00C851 100%
+    );
+    }
+  }
+  .catalog-container::before {
+    background: linear-gradient(
+      to right,
+      #e3ff44 0%,
+      #ff4444 33.33%,
+      #c03802 33.33%,
+      #33b5e5 66.66%,
+      #5469ef 66.66%,
+      #00C851 100%
+    );
+  }
+
+  
+  @media (max-width: 768px) {
+    .catalog-container {
+      grid-template-columns: repeat(3, 2fr);
+    }
+    .catalog-container::before {
+        background: linear-gradient(
+          to right,
+          #ff4444 0%,
+          #ff4444 50%,
+          #33b5e5 50%,
+          #33b5e5 100%
+        );
+      }
+    
+    .footer-middle {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalog-container {
+      grid-template-columns: 1fr;
+    }
+    .catalog-container::before {
+        background: #ff4444;
+      }
+    
+    .footer {
+      padding: 0 0 15px 0;
+    }
+    
+    .footer-top,
+    .footer-middle,
+    .footer-bottom {
+      padding: 15px;
+    }
+  }

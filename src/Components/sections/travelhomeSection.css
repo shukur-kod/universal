@@ -1,0 +1,341 @@
+.hero-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.travel-section {
+  filter: brightness(1.2) contrast(1.2) saturate(1.2); /* Yorqinlik va kontrastni oshirish */
+  background-image: url('https://ir.ozone.ru/s3/multimedia-n/6751218227.jpg'); /* O'zingizga kerakli rasm URL'sini qo'ying */
+  color: white; /* Matn rangini oq qiling */
+}
+
+/* Overlay stillar */
+.overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Boshqa stillar... */
+/* Navigation stillar */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .nav-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  /* Collapsible menu stillar */
+  .collapsible {
+    color: whitesmoke;
+    position: relative;
+  }    
+  
+.category {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .category:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .collapse-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 10;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collapse-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .collapse-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .collapse-content li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Content stillar */
+  .content {
+    margin-top: 100px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    z-index: 2;
+  }
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .read-more {
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+/* Responsive dizayn */
+@media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .navigation {
+      padding: 10px;
+    }
+  
+    .category {
+      padding: 6px 12px;
+      font-size: 1rem;
+    }
+  }  
+  @media (max-width: 480px) {
+    .nav-left {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .collapse-content {
+      width: 100%;
+      left: 0;
+    }
+  }
+  .hero-section.home-section {
+    background-image: url('https://images.pexels.com/photos/24734498/pexels-photo-24734498/free-photo-of-silver-tesla-cybertruck.jpeg?auto=compress&cs=tinysrgb&w=600');
+    filter: brightness(1.1) contrast(1.1) saturate(1.1); /* Yorqinlikni o'zgartirish */
+    background-attachment: fixed; /* Rasm scroll qilinganda ham o'z joyida qoladi */
+  }
+  
+  .home-section .overlay {
+    background:rgba(red, green, blue, alpha); /* Home uchun boshqa shaffoflik */
+  }
+  
+  .home-section .title {
+    font-size: 3.5rem; /* Home uchun kattaroq sarlavha */
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .home-section .description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+  .home-section .read-more {
+    background: #ff4444;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .home-section .read-more:hover {
+    background: #ff6666;
+    transform: translateY(-2px);
+  }
+  
+  .home-section .category,
+  .home-section .stat {
+    background: rgba(255, 68, 68, 0.2);
+  }
+  
+  .home-section .category:hover,
+  .home-section .stat:hover {
+    background: rgba(255, 68, 68, 0.3);
+  }
+
+  .home-section .read-more:hover {
+    background: #ff6666;
+    transform: translateY(-2px);
+  }
+  
+  .home-section .category,
+  .home-section .stat {
+    background: rgba(16, 7, 97, 0.2);
+  }
+  
+  .home-section .category:hover,
+  .home-section .stat:hover {
+    background: rgba(70, 193, 148, 0.3);
+  }
+  
+  
+  
+  .collapse-content {
+    padding: 10px; /* Ichki bo'sh joy */
+    background-color: hsl(0, 14%, 1%); /* Orqa fon rangi */
+    border: 1px solid #ddd; /* Chegara */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+  }
+  .article-meta {
+    display: flex; /* Flex konteyner */
+    justify-content: space-between; /* Bo'shliqlarni teng taqsimlash */
+    margin-top: 15px; /* Yuqoridan bo'sh joy */
+  }
+  
+  .date {
+    color: #666; /* Sana rangi */
+    font-size: 14px; /* Shrift o'lchami */
+  }
+  
+  .stat {
+    display: flex; /* Flex konteyner */
+    align-items: center; /* Vertikal markazlash */
+    color: #999; /* Matn rangi */
+    font-size: 14px; /* Shrift o'lchami */
+  }
+  
+  .number {
+    margin-right: 5px; /* Raqam va ikonka orasidagi bo'sh joy */
+  }
+  .back-btn {
+    cursor: pointer; /* Kursor ko'rsatkichini o'zgartirish */
+    font-size: 16px; /* Matn o'lchamini belgilash */
+    
+    background-color:   rgba(255, 255, 255, 0.2);; /* Tugma rangi */
+    color: #f8f3f3; /* Matn rangi */
+    padding: 10px 15px; /* Tugma ichidagi bo'sh joy */
+    border: none; /* Chegarani olib tashlash */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursor ko'rsatkichini o'zgartirish */
+    transition: background-color 0.3s; /* O'zgarish uchun animatsiya */
+  }
+  
+  .back-btn:hover {
+    color: #000; 
+    background-color: transparent; /* Hover holatidagi rangi */
+  }
+  .nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Tugmalar orasidagi bo'shliq */
+  }
+  .home-icon {
+    font-size: 24px; /* Belgining o'lchamini oshiring */
+    margin-right: 5px; /* Belgidan matn orasidagi bo'shliq */
+  }
+  .control-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); /* Tugma rangi */
+    color: white; /* Matn rangi */
+    padding: 10px 15px; /* Tugma ichidagi bo'sh joy */
+    border: none; /* Chegarani olib tashlash */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursor ko'rsatkichini o'zgartirish */
+    transition: background-color 0.3s; /* O'zgarish uchun animatsiya */
+  }
+  
+  .control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover holatida yanada och */
+    transform: scale(1.05); /* Kichik ko'tarilish effekti */
+  }
+  .article-section {
+    width: 100%;
+    height: 100vh;
+   
+     /* Burchaklarni yumshatish */
+  margin:  0;
+    padding: 40px 20px;
+    background-color: #f8f3f3; /* Orqa fon rangi */
+    text-align: center;
+  }
+  
+  .article-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-description {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Matn rangi */
+  }
+  
+  .article-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Burchaklarni yumshatish */
+    margin-bottom: 20px;
+  }
+  
+  .article-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Tugmalar orasidagi bo'shliq */
+    margin-top: 20px;}
+  
+  .control-btn {
+    background-color:  rgba(255, 255, 255, 0.5); /* Tugma rangi */
+    color: #333; /* Matn rangi */
+    padding: 10px 20px; /* Tugma ichidagi bo'sh joy */
+    border: none; /* Chegarani olib tashlash */
+    border-radius: 5px; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursor ko'rsatkichini o'zgartirish */
+    transition: background-color 0.3s; /* O'zgarish uchun animatsiya */
+  }
+  
+  .control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Hover holatidagi rangi */
+  transform: scale(1.05); /* Kichik ko'tarilish effekti */
+  }

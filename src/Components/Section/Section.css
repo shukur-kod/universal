@@ -1,0 +1,240 @@
+/* Asosiy stillar */
+.hero-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.home-icon {
+  font-size: 24px; /* Belgining o'lchamini oshiring */
+  margin-right: 5px; /* Belgidan matn orasidagi bo'shliq */
+}
+
+
+
+/* Overlay stillar */
+.overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Navigation stillar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Collapsible menu stillar */
+.collapsible {
+  color: whitesmoke;
+  position: relative;
+}
+
+.category {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.collapse-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 10;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapse-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.collapse-content li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.collapse-content li:last-child {
+  border-bottom: none;
+}
+
+/* Content stillar */
+.content {
+  margin-top: 100px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  z-index: 2;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.read-more {
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Har bir section uchun maxsus stillar */
+.art-design-section {
+  background-image: url('https://i.pinimg.com/originals/26/c4/78/26c478617f092e833751996fed03a320.jpg');
+}
+
+.art-design-section .overlay {
+  background: rgba(255, 105, 180, 0.4);
+}
+
+.education-section {
+  background-image: url('https://avatars.mds.yandex.net/i?id=18d162a27e209c3a8335ffc1a5aff7f5_l-9106782-images-thumbs&n=13');
+}
+
+.education-section .overlay {
+  background: rgba(0, 128, 0, 0.4);
+}
+
+.health-section {
+  background-image: url('https://avatars.mds.yandex.net/i?id=3665639e58ac935c1cc432b7dae2a0a7_l-5298175-images-thumbs&n=13');
+}
+
+.health-section .overlay {
+  background: rgba(0, 191, 255, 0.4);
+}
+
+.life-section {
+  background-image: url('https://play-lh.googleusercontent.com/cGlfjSDWEYs3pjjQ6G8ZpoEwwbxy0EJxxlTE-wI0PlGG3Y2hSB55EApp1eDYjL2VzWs=h500');
+}
+
+.life-section .overlay {
+  background: rgba(255, 165, 0, 0.4);
+}
+
+.money-section {
+  background-image: url('https://i.ytimg.com/vi/ZDvC1fQNOi0/maxresdefault.jpg');
+}
+
+.money-section .overlay {
+  background: rgba(50, 205, 50, 0.4);
+}
+
+.news-section {
+  background-image: url('https://i.ytimg.com/vi/uPUvlLbKn9k/maxresdefault.jpg');
+}
+
+.news-section .overlay {
+  background: rgba(70, 130, 180, 0.4);
+}
+
+.opinion-section {
+  background-image: url('https://avatars.mds.yandex.net/i?id=cb8e1c089509c63519bc13b3cafe4f690e9b5e83-4120675-images-thumbs&n=13');
+}
+
+.opinion-section .overlay {
+  background: rgba(255, 69, 0, 0.4);
+}
+
+.science-section {
+  background-image: url('https://i.vuzopedia.ru/storage/app/uploads/public/65c/9ce/ba3/65c9ceba32701951464464.jpg');
+}
+
+.science-section .overlay {
+  background: rgba(138, 43, 226, 0.4);
+}
+
+.sports-section {
+  background-image: url('https://admbal.ru/upload/iblock/b20/b20641c4d99c42557186a42625bc0ce2.jpg');
+}
+
+.sports-section .overlay {
+  background: rgba(255, 215, 0, 0.4);
+}
+
+/* Responsive dizayn */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .navigation {
+    padding: 10px;
+  }
+
+  .category {
+    padding: 6px 12px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .collapse-content {
+    width: 100%;
+    left: 0;
+  }
+}
